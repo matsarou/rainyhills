@@ -1,6 +1,5 @@
 package dto;
 
-
 import rest.validation.RainyHillsError;
 
 /**
