@@ -23,11 +23,9 @@ public class VolumeServiceImpl implements VolumeService {
         for (int i = size-2; i >= 0; i--) {
             right[i] = Math.max(right[i + 1], numbers[i]);
         }
-
         for (int i = 0; i < size; i++) {
             volume += Math.min(left[i], right[i]) - numbers[i];
         }
-
         return volume;
     }
 }
